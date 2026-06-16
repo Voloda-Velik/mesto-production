@@ -7,7 +7,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Mesto</title>
-  <script type="module" crossorigin src="./assets/index-U9mVYi7X.js"></script>
+  <script type="module" crossorigin src="./assets/index-UiSrV3Wi.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-D2z4Cjqv.css">
 </head>
 
@@ -105,6 +105,19 @@
         </form>
       </div>
     </div>
+
+
+      <div class="popup popup_type_info">
+        <div class="popup__content popup__content_content_info">
+          <button type="button" class="popup__close"></button>
+          <h3 class="popup__title"></h3>
+          <dl class="popup__info"></dl>
+
+          <h4 class="popup__text"></h4>
+          <ul class="popup__list"></ul>
+        </div>
+      </div>
+
     <div class="popup popup_type_confirm-delete">
       <div class="popup__content">
         <button type="button" class="popup__close"></button>
@@ -116,16 +129,7 @@
         </form>
       </div>
     </div>
-    <div class="popup popup_type_info">
-      <div class="popup__content">
-        <button type="button" class="popup__close"></button>
-        <h3 class="popup__title">Статистика пользователей</h3>
-        <ul class="popup__info-list"></ul>
-        <h4 class="popup__title">Все пользователи</h4>
-        <ul class="popup__users-list"></ul>
-      </div>
-    </div>
-  </div>
+
 
 
   <template id="card-template">
@@ -154,6 +158,17 @@
   <template id="popup-info-user-preview-template">
     <li class="popup__user-item"></li>
   </template>
+
+    <template id="popup-info-definition-template">
+      <div class="popup__info-item">
+        <dt class="popup__info-term"></dt>
+        <dd class="popup__info-description"></dd>
+      </div>
+    </template>
+
+    <template id="popup-info-user-preview-template">
+      <li class="popup__list-item popup__list-item_type_badge"></li>
+    </template>
 
 </body>
 
